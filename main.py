@@ -1,6 +1,6 @@
 import pyodbc
 
-conn = pyodbc.connect('DRIVER={SQL Server};SERVER=192.168.30.251;DATABASE=TwitterTrendDetection;UID=sa;PWD=Aa123456')
+conn = pyodbc.connect('DRIVER={SQL Server};SERVER=servser_name;DATABASE=table_name;UID=id;PWD=pass')
 
 cursor = conn.cursor()
 cursor.execute('SELECT TOP 10 word,usersCount FROM [dbo].[Twitter_GroupedWords]')
